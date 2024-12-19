@@ -1,0 +1,18 @@
+version = 1
+requires-python = ">=3.11"
+
+[[package]]
+name = "mybin"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "mylib" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "mylib", virtual = "../mylib" }]
+
+[[package]]
+name = "mylib"
+version = "0.1.0"
+source = { virtual = "../mylib" }
