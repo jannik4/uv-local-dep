@@ -10,9 +10,9 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "mylib", virtual = "../mylib" }]
+requires-dist = [{ name = "mylib", directory = "../mylib" }]
 
 [[package]]
 name = "mylib"
 version = "0.1.0"
-source = { virtual = "../mylib" }
+source = { directory = "../mylib" }
